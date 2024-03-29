@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
+import { AntDesign } from '@expo/vector-icons';
 
 function AddTransaction(props) {
   const [enteredItem, setEnteredItem] = useState("");
@@ -75,7 +76,8 @@ function AddTransaction(props) {
       >
         <StatusBar style="auto" />
         <Pressable style={styles.closeIcon} onPress={props.onCancel}>
-          <Ionicons name="md-close" size={35} color="black" />
+          {/* <Ionicons name="md-close" size={35} color="black" /> */}
+          <AntDesign name="close" size={35} color="black" />
         </Pressable>
         <Text style={styles.title}>New Transaction</Text>
         <View style={styles.outerContainer}>

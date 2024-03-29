@@ -3,6 +3,7 @@ import { PieChart } from "react-native-chart-kit";
 import pieChartData from "./PieChartData";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
+import { AntDesign } from '@expo/vector-icons';
 
 function ChartScreen(props) {
 
@@ -14,7 +15,8 @@ function ChartScreen(props) {
     <View style={styles.container}>
         <View style={styles.buttonContainer}>
         <Pressable style={styles.closeIcon} onPress={props.onCancel}>
-          <Ionicons name="md-close" size={35} color="black" />
+          {/* <Ionicons name="md-close" size={35} color="black" /> */}
+          <AntDesign name="close" size={35} color="black" />
         </Pressable>
         </View>
         <View style={styles.chartContainer}>
